@@ -76,46 +76,46 @@
         var map = L.map('map').setView(startPoint, 8),
         tilelayer = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {maxZoom: 20, attribution: 'Data \u00a9 <a href="http://www.openstreetmap.org/copyright"> OpenStreetMap Contributors </a> Tiles \u00a9 HOT'}).addTo(map);
 
-    	function onEachFeature(feature, layer) {
-			var Education = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
-                        '<p>' + feature.properties.Legend + '</p>' + '<p>' + feature.properties.Organization + '</p>' +'<p>' + feature.properties.Position + '</p>' +'<p>' + feature.properties.Duties + '</p>' +'<p>' + feature.properties.Dates + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
-                        '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
+    	//function onEachFeature(feature, layer) {
+		//	var Education = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
+                       // '<p>' + feature.properties.Legend + '</p>' + '<p>' + feature.properties.Organization + '</p>' +'<p>' + feature.properties.Position + '</p>' +'<p>' + feature.properties.Duties + '</p>' +'<p>' + feature.properties.Dates + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
+                       // '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
 			
 			
-			layer.bindPopup(Education);
+		//	layer.bindPopup(Education);
   
-		 }
+		 //}
 		  
-		L.geoJson([Education], {
+		//L.geoJson([Education], {
 
-			style: function (feature) {
+		//	style: function (feature) {
 				return feature.properties && feature.properties.style;
-			},
+		//	},
 
-			onEachFeature: onEachFeature,
+		//	onEachFeature: onEachFeature,
 
-			pointToLayer: function (feature, latlng) {
-				return L.circleMarker(latlng, {
-					radius: 10,
-					fillColor: "#f03b20",
-					color: "#000",
-					weight: 1,
-					opacity: 1,
-					fillOpacity: 0.8
-				});
-			}
-		}).addTo(map);
+		//	pointToLayer: function (feature, latlng) {
+		//		return L.circleMarker(latlng, {
+		//			radius: 10,
+		//			fillColor: "#f03b20",
+		//			color: "#000",
+		//			weight: 1,
+		//			opacity: 1,
+		//			fillOpacity: 0.8
+		//		});
+		//	}
+		//}).addTo(map);
 	
 	function onEachFeature(feature, layer) {
-			var 2013 Commercial Sales = '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
+			var Sales = '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
 			//var Employment = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
                         //'<p>' + feature.properties.Legend + '</p>' + '<p>' + feature.properties.Organization + '</p>' +'<p>' + feature.properties.Position + '</p>' +'<p>' + feature.properties.Duties + '</p>' +'<p>' + feature.properties.Dates + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
                         //'<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
 			
-			layer.bindPopup(2013 Commercial Sales);
+			layer.bindPopup(Sales);
 		  }
 		  
-		L.geoJson([2013 Commercial Sales], {
+		L.geoJson(Sales], {
 
 			style: function (feature) {
 				return feature.properties && feature.properties.style;
@@ -169,7 +169,7 @@
             
 	
 	function getColor(p) {
-        	return p === '2013 Commercial Sales' ? '#ff7800' :
+        	return p === 'Sales' ? '#ff7800' :
         					'#ff7800';
         	      // p === 'Internship' ? '#000000':
         	       //p === 'College Degree' ? '#f03b20' :
