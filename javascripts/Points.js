@@ -3,7 +3,14 @@ Var points={
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+                "Legend":"Undergraduate BS",
+                "Title": "Interactive Resume",
+                "Organization":"University of North Georgia",
+                "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
+                "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis",
+                "Dates":"January 2009 - May 2012"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -14,7 +21,14 @@ Var points={
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+                "Legend":"Undergraduate BS",
+                "Title": "Interactive Resume",
+                "Organization":"University of North Georgia",
+                "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
+                "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis",
+                "Dates":"January 2009 - May 2012"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -25,7 +39,14 @@ Var points={
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+                "Legend":"Undergraduate BS",
+                "Title": "Interactive Resume",
+                "Organization":"University of North Georgia",
+                "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
+                "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis",
+                "Dates":"January 2009 - May 2012"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -36,7 +57,14 @@ Var points={
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+                "Legend":"Undergraduate BS",
+                "Title": "Interactive Resume",
+                "Organization":"University of North Georgia",
+                "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
+                "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis",
+                "Dates":"January 2009 - May 2012"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -47,7 +75,14 @@ Var points={
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+                "Legend":"Undergraduate BS",
+                "Title": "Interactive Resume",
+                "Organization":"University of North Georgia",
+                "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
+                "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis",
+                "Dates":"January 2009 - May 2012"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -58,7 +93,14 @@ Var points={
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+                "Legend":"Undergraduate BS",
+                "Title": "Interactive Resume",
+                "Organization":"University of North Georgia",
+                "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
+                "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis",
+                "Dates":"January 2009 - May 2012"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
