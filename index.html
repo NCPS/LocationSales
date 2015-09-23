@@ -108,14 +108,14 @@
 	
 	function onEachFeature(feature, layer) {
 			
-			var Sales = '<div class=+ ><b>' + feature.properties.Legend + '</b><br/>' +
+			var Points = '<div class=+ ><b>' + feature.properties.Legend + '</b><br/>' +
                         '<p>' + feature.properties.Title + '</p>' + '<p>' + feature.properties.Organization + '</p>' +'<p>' + feature.properties.Position + '</p>' +'<p>' + feature.properties.Duties + '</p>' +'<p>' + feature.properties.Dates + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
                         '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
 			
-			layer.bindPopup(Sales);
+			layer.bindPopup(Points);
 		  }
 		  
-		L.geoJson(Sales], {
+		L.geoJson(Points], {
 
 			style: function (feature) {
 				return feature.properties && feature.properties.style;
@@ -169,7 +169,7 @@
             
 	
 	function getColor(p) {
-        	return p === 'Sales' ? '#ff7800' :
+        	return p === 'Points' ? '#ff7800' :
         					'#ff7800';
         	      // p === 'Internship' ? '#000000':
         	       //p === 'College Degree' ? '#f03b20' :
@@ -181,7 +181,7 @@
        	   
        	   var div = L.DomUtil.create('div', 'info legend'),
        	       labels =  ['<strong>Legend</strong>'],
-       	       location = [Sales];
+       	       location = [Points];
                //location = ['Employment', 'Internship', 'College Degree'];
    
     		for (var i = 0; i < location.length; i++) {
