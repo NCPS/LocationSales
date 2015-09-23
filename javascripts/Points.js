@@ -1,4 +1,4 @@
-Var points={
+Var Points={
   "type": "FeatureCollection",
   "features": [
     {
