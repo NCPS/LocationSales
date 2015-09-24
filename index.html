@@ -20,7 +20,7 @@
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   
-  <script src="/LocationSales/javascripts/Points.js" type="text/javascript"></script>
+  <script src="/LocationSales/javascripts/Location.js" type="text/javascript"></script>
  <!-- <script src="/Road-to-GIS-Professionalism/javascripts/Resume/Employment.js" type="text/javascript"></script>
   <script src="/Road-to-GIS-Professionalism/javascripts/Resume/Intership.js" type="text/javascript"></script>-->
   
@@ -77,14 +77,14 @@
 	
 	function onEachFeature(feature, layer) {
 			
-			var Points = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
-                        '<p>' + feature.properties.Legend + '</p>' + '<p>' + feature.properties.Organization + '</p>' +'<p>' + feature.properties.Position + '</p>' +'<p>' + feature.properties.Duties + '</p>' +'<p>' + feature.properties.Dates + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
+			var Location = '<div class=+ ><b>' + feature.properties.PIN + '</b><br/>' +
+                        '<p>' + feature.properties.SALE_DATE + '</p>' + '<p>' + feature.properties.SALE_PRICE + '</p>' +'<p>' + feature.properties.SITUS_ADDR + '</p>' +'<p>' + feature.properties.ACRES + '</p>' +'<p>' + feature.properties.CLASS + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
                         '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
 			
-			layer.bindPopup(Points);
+			layer.bindPopup(Location);
 		  }
 		  
-		L.geoJson([Points], {
+		L.geoJson([Location], {
 
 			style: function (feature) {
 				return feature.properties && feature.properties.style;
@@ -105,7 +105,7 @@
 		}).addTo(map);
 	
        function getColor(p) {
-        	return p === 'Points' ? '#ff7800' :
+        	return p === 'Location' ? '#ff7800' :
         					'#ff7800';
         	      // p === 'Internship' ? '#000000':
         	       //p === 'College Degree' ? '#f03b20' :
@@ -117,7 +117,7 @@
        	   
        	   var div = L.DomUtil.create('div', 'info legend'),
        	       labels =  ['<strong>Legend</strong>'],
-       	       location = ['Points'];
+       	       location = ['Location'];
                //location = ['Employment', 'Internship', 'College Degree'];
    
     		for (var i = 0; i < location.length; i++) {
