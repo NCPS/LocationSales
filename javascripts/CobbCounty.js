@@ -1,4 +1,4 @@
-var county={
+var CobbCounty={
   "type": "FeatureCollection",
   "features": [
     {
